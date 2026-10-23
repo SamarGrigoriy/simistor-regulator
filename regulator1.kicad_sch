@@ -1,0 +1,290 @@
+(kicad_sch
+	(version 20260306)
+	(generator "schlib")
+	(generator_version "10.0")
+	(uuid "d2c18089-69be-5a75-a37a-8d37e2bdbe4b")
+	(paper "A4")
+	(title_block
+		(title "Одноканальный симисторный регулятор")
+		(rev "A")
+		(company "")
+	)
+	(lib_symbols
+
+	)
+	(sheet
+		(at 25.4 50.8)
+		(size 50.8 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "80baa031-92f2-5efa-aa4d-f6f0281f5403")
+		(property "Sheetname" "Силовая часть 230 В"
+			(at 25.4 50.099999999999994 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sch_mains.kicad_sch"
+			(at 25.4 64.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ZC" output
+			(at 76.19999999999999 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3786277e-8cfa-5c4d-8f50-f036821fcae6")
+		)
+		(pin "TRIAC" input
+			(at 76.19999999999999 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cc0cff32-5b77-5f80-919e-eb76c413b267")
+		)
+		(instances
+			(project "regulator1"
+				(path "/d2c18089-69be-5a75-a37a-8d37e2bdbe4b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.68 50.8)
+		(size 55.88 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "16543f1d-5336-53d8-ba52-212c5c559ce6")
+		(property "Sheetname" "Управление: МК, ЖКИ, кнопки, датчик"
+			(at 106.68 50.099999999999994 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sch_mcu.kicad_sch"
+			(at 106.68 64.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ZC" input
+			(at 106.68 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cb881cb5-cd4d-5c0f-8d53-993902c9fd84")
+		)
+		(pin "TRIAC" output
+			(at 106.68 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "74c67702-3f0b-5fbc-a007-6e68731bb4a7")
+		)
+		(instances
+			(project "regulator1"
+				(path "/d2c18089-69be-5a75-a37a-8d37e2bdbe4b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 106.68 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c7c3052-faad-589e-b744-83da18068bea")
+	)
+	(wire
+		(pts
+			(xy 76.2 55.88) (xy 106.68 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30b62e2d-ec1f-5b96-9216-de4606bb7e1d")
+	)
+	(text
+		"Одноканальный регулятор (термостат) нагрузки 230 В, 50 Гц на симисторе BTA416Y-800C."
+		(at 25.4 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "05b07003-72b9-596b-8c08-26a04ffda9b2")
+	)
+	(text
+		"МК CH32V006 держит температуру по датчику DS18B20: фазовое управление или пачки"
+		(at 25.4 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff95b973-cbf3-5131-9941-f7f9e6dfb246")
+	)
+	(text
+		"полупериодов — решает прошивка. Уставка и состояние — на ЖКИ 16x2, ввод — тремя кнопками."
+		(at 25.4 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef817c5a-9480-5598-8fea-2934ee529772")
+	)
+	(text
+		""
+		(at 25.4 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d3d5929-19fa-5649-9579-3bd8ec0a8470")
+	)
+	(text
+		"Между блоками всего две связи, и обе низковольтные: ZC с выхода оптрона детектора"
+		(at 25.4 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "97976e39-8746-564c-a9d8-5b12493afea5")
+	)
+	(text
+		"нуля и TRIAC на светодиод оптосимистора. Граница изоляции — оптроны EL817 и MOC3052"
+		(at 25.4 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df0dff45-1298-5f0a-a91b-9eb3bdbec136")
+	)
+	(text
+		"и модуль AC/DC IRM-10-5. Лист «Управление» целиком низковольтный: ЖКИ, кнопки и датчик"
+		(at 25.4 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7600e561-0b51-516c-9226-780317b35313")
+	)
+	(text
+		"доступны пользователю. На плате между сетевой и низковольтной частью — зазор от 6 мм."
+		(at 25.4 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "443517d2-fd74-55b0-838c-174712e2b8d1")
+	)
+	(text
+		""
+		(at 25.4 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f038d465-33a2-5687-8750-473c85f32c6c")
+	)
+	(text
+		"Нагрузка до 4 А (0,9 кВт): BTA416Y рассчитан на 16 А, предел задаёт радиатор в корпусе."
+		(at 25.4 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c7e6f61-b573-5b6f-a95d-9dbad3ac0fa0")
+	)
+	(text
+		"Нагрузку защищает внешний автомат; F101 на плате бережёт только электронику."
+		(at 25.4 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b58eaafc-f834-5600-a883-0d0892967b29")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+		(path "/80baa031-92f2-5efa-aa4d-f6f0281f5403"
+			(page "2")
+		)
+		(path "/16543f1d-5336-53d8-ba52-212c5c559ce6"
+			(page "3")
+		)
+	)
+	(embedded_fonts no)
+)

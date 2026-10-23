@@ -1,0 +1,19 @@
+# KiCad временные файлы
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.kicad_pcb-bak
+*.sch-bak
+_autosave-*
+*.dcm
+
+# Python
+__pycache__/
+*.pyc
+
+# Архивы-бэкапы
+*.zip
+
+# Системные файлы
+.DS_Store
+Thumbs.db

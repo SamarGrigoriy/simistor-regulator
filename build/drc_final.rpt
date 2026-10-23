@@ -1,0 +1,63 @@
+** Drc report for regulator1.kicad_pcb **
+** Created on 2026-10-08T08:25:31 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 14 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: ограничения настроек платы; warning
+    @(100.0000 mm, 100.0000 mm): Прямоугольник на Edge.Cuts
+    @(113.3800 mm, 162.2800 mm): Прямоугольник от J102 на F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: ограничения настроек платы; warning
+    @(100.0000 mm, 100.0000 mm): Прямоугольник на Edge.Cuts
+    @(101.3800 mm, 162.2800 mm): Прямоугольник от J101 на F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: ограничения настроек платы; warning
+    @(100.0000 mm, 100.0000 mm): Прямоугольник на Edge.Cuts
+    @(162.3800 mm, 162.2800 mm): Прямоугольник от J203 на F.Silkscreen
+[lib_footprint_mismatch]: Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(120.5000 mm, 118.0000 mm): Посад. место R102
+[lib_footprint_mismatch]: Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(120.5000 mm, 124.0000 mm): Посад. место R103
+[lib_footprint_mismatch]: Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(116.5000 mm, 124.0000 mm): Посад. место R104
+[lib_footprint_mismatch]: Посад. место 'Fuse_Littelfuse_372_D8.50mm' не соответствует копии в библиотеке 'Fuse'
+    Local override; warning
+    @(104.5000 mm, 131.0000 mm): Посад. место F101
+[lib_footprint_mismatch]: Посад. место 'SolderWire-0.25sqmm_1x04_P4.2mm_D0.65mm_OD1.7mm' не соответствует копии в библиотеке 'Connector_Wire'
+    Local override; warning
+    @(178.0000 mm, 103.0000 mm): Посад. место J202
+[lib_footprint_mismatch]: Посад. место 'PinHeader_1x05_P2.54mm_Vertical' не соответствует копии в библиотеке 'Connector_PinHeader_2.54mm'
+    Local override; warning
+    @(161.0000 mm, 132.3000 mm): Посад. место J201
+[lib_footprint_mismatch]: Посад. место 'C_0805_2012Metric' не соответствует копии в библиотеке 'Capacitor_SMD'
+    Local override; warning
+    @(157.6000 mm, 123.4000 mm): Посад. место C201
+[lib_footprint_mismatch]: Посад. место 'TerminalBlock_Golten_GT301-5.0-02P_1x02_P5.00mm' не соответствует копии в библиотеке 'regulator1'
+    Local override; warning
+    @(104.0000 mm, 165.1000 mm): Посад. место J101
+[lib_footprint_mismatch]: Посад. место 'R_0805_2012Metric' не соответствует копии в библиотеке 'Resistor_SMD'
+    Local override; warning
+    @(119.0000 mm, 158.2000 mm): Посад. место R108
+[lib_footprint_mismatch]: Посад. место 'TerminalBlock_Golten_GT301-5.0-03P_1x03_P5.00mm' не соответствует копии в библиотеке 'regulator1'
+    Local override; warning
+    @(165.0000 mm, 165.1000 mm): Посад. место J203
+[lib_footprint_mismatch]: Посад. место 'RV_Disc_D12mm_W4.2mm_P7.5mm' не соответствует копии в библиотеке 'Varistor'
+    Local override; warning
+    @(114.5000 mm, 134.0000 mm): Посад. место RV101
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

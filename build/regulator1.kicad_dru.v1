@@ -1,0 +1,12 @@
+(version 1)
+
+# Усиленная изоляция сеть 230 В — низковольтная часть (SELV): зазор и путь утечки 6 мм
+(rule "Изоляция сеть-НН"
+	(condition "A.NetClass == 'Mains' && B.NetClass == 'LV'")
+	(constraint clearance (min 6.0mm))
+	(constraint creepage (min 6.0mm)))
+
+# Рабочая изоляция между сетевыми цепями (до 325 В пик) для дорожек и переходных
+(rule "Сеть: дорожки"
+	(condition "A.NetClass == 'Mains' && B.NetClass == 'Mains' && (A.Type == 'Track' || A.Type == 'Via')")
+	(constraint clearance (min 2.0mm)))
